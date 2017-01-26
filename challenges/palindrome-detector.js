@@ -21,3 +21,11 @@
 */
 
 // YOUR CODE HERE
+var isPalindrome = function(string){
+  var str = string.replace(/[^a-zA-Z 0-9]/gi, "").toLowerCase().split("").reverse().join("");
+  if (str == str.replace(/[^a-zA-Z 0-9]/gi, "").toLowerCase().split("").reverse().join("")){
+    return "Palindrome!"
+  } else {
+    return "Not a Palindrome!"
+  }
+}
