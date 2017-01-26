@@ -21,3 +21,13 @@
 */
 
 // YOUR CODE HERE
+
+var isPalindrome = function(word) {
+    if (word === word.split("").reverse().join("")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isPalindrome('mom'));
+console.log(isPalindrome('momma'));
