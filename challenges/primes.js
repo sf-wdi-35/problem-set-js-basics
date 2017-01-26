@@ -10,3 +10,12 @@
 */
 
 // YOUR CODE HERE
+//Prime is divisible only by self and 1
+//check if any number between 1 and self divides the number
+//if so, it's not prime
+
+function isPrime(num) {
+	for (var i = 2; i < num; i++) {
+		
+	}
+}
