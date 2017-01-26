@@ -10,3 +10,23 @@
 */
 
 // YOUR CODE HERE
+var isPrime = function(num) {
+  for(i=2;i<num;i++) {
+
+    if (num ==1) {
+      return true;
+      break
+    }
+    else if (num%i == 0) {
+       var divisible = true;
+       break
+    } else {
+       divisible = false;
+    }
+  }
+  if(!divisible) {
+    return true
+  } else {
+    return false
+  }
+};
