@@ -10,3 +10,25 @@
 */
 
 // YOUR CODE HERE
+
+function isPrime(num){
+
+	for(var i = 2; i <= Math.floor(Math.sqrt(num)); i++){
+		if(num %  i === 0){
+			return false;
+		}
+	}
+	return true;
+}
+
+function primes(max){
+	
+	var optmusPrime= [];
+
+		for(var j = 2; j <= max; j++){
+			if(isPrime(j)){
+				optmusPrime.push(j);
+			}
+		}
+	return optmusPrime;
+}

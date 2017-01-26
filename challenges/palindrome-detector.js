@@ -21,3 +21,14 @@
 */
 
 // YOUR CODE HERE
+function palidromeDetector(string){
+
+  var str = string.replace(/[^a-z0-9]/gi, "").toLowerCase().split("").reverse().join("");
+  
+  if(str.split("").reverse().join("") == str){
+    return "We got ourselfs a palindrome, Pa!"
+  }
+  else{
+    return "This ain't a palindrome, ma!"
+  }
+}

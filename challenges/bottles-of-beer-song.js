@@ -22,3 +22,16 @@
 */
 
 // YOUR CODE HERE
+
+function beerBottles(){
+  var x = prompt("How many verses would you like to hear?");
+  
+  for(var i = x; i > 0; i--){
+    var y = i - 1;
+    if(i == 1){
+      console.log( i + " bottle of beer on the wall, "+ i +" bottle of beer! Take one down and pass it around, No more bottles of beer on the wall!");
+      break;
+    }
+    console.log( i + " bottles of beer on the wall, "+ i +" bottles of beer! Take one down and pass it around, " + y + " bottles of beer on the wall!");
+  }
+}
