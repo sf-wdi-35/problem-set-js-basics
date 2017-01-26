@@ -21,3 +21,14 @@
 */
 
 // YOUR CODE HERE
+var isPalindrome = function(possiblePalindrome) {
+  var forward = possiblePalindrome.split("").join("");
+  var backward = forward.split('').reverse().join("");
+console.log(backward);
+  if (forward == backward) {
+    return true
+  } else {
+    return false
+  }
+
+};
