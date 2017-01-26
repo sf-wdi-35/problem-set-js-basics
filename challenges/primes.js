@@ -10,3 +10,29 @@
 */
 
 // YOUR CODE HERE
+
+var isPrime = function(num){
+  var prime;
+  if (num===1 || num===2 || num===3){
+    return true;
+  };
+  for (i=2; i<(num); i++){
+    if(num%i == 0){
+      prime = false;
+      return prime;
+    } else {
+      prime = true;
+    }
+  };
+  return prime;
+}
+
+var primes = function(max){
+  var primeArr = [];
+  for (j=1; j<=max; j++){
+    if (isPrime(j)){
+      primeArr.push(j);
+    }
+  }
+  return primeArr;
+}

@@ -21,3 +21,24 @@
 */
 
 // YOUR CODE HERE
+var isPalindrome = function(string){
+  string = string.toLowerCase();
+  var wordArr = []
+  for (i=0; i<string.length; i++){
+    if(string[i].match(/^[a-zA-Z]+$/)){
+      wordArr.push(string[i]);
+    };
+  };
+  var wordBack = wordArr.slice();
+  wordBack = wordBack.reverse();
+  var palindrome;
+  for (i=0; i<string.length; i++){
+    if(wordBack[i] != wordArr[i]){
+      palindrome=false;
+      return palindrome;
+    } else {
+      palindrome=true;
+    }
+  }
+  return palindrome;
+}
