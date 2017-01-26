@@ -10,3 +10,33 @@
 */
 
 // YOUR CODE HERE
+//
+var isPrime = function(num) {
+	if (num <= 1) {
+    return false;
+  }
+
+	for (var i = 2; i < num; i++) {
+    if (num % i === 0) {
+			return false;
+    }
+  }
+  return true;
+
+}
+
+function primes(max) {
+	var primeNums = [];
+
+  for (var i=2; i <= max; i++) {
+    if (isPrime(i)) {
+      primeNums.push(i);
+    }
+  }
+  return primeNums;
+}
+
+
+console.log(primes(5));
+console.log(primes(8));
+console.log(primes(17));
