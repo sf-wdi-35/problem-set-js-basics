@@ -21,3 +21,13 @@
 */
 
 // YOUR CODE HERE
+
+
+function isPalindrome(word){
+  var reversed = word.split('').reverse().join('');
+console.log(reversed === word);
+}
+
+
+isPalindrome("mom");
+isPalindrome("dubbmeisl");

@@ -22,3 +22,31 @@
 */
 
 // YOUR CODE HERE
+
+
+function beer(){
+
+  for (var i = 5; i >= 2; i --){
+    console.log((i) + (" bottles of beer on the wall,"));
+    console.log((i) + (" bottles of beer!"));
+    console.log("Take one down and pass it around,");
+    console.log((i - 1) + (" bottles of beer on the wall!"));
+    }
+  oneMore();
+  }
+
+function oneMore(){
+  console.log("1 bottle of beer on the wall,");
+  console.log("1 bottle of beer!");
+  console.log("Take one down and pass it around,");
+
+finishMyBeer();
+  }
+
+function finishMyBeer(){
+  console.log("0 bottles of beer!");
+  console.log("Take one down and pass it around,");
+  console.log("No more bottles...");
+  }
+
+beer();

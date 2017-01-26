@@ -10,3 +10,23 @@
 */
 
 // YOUR CODE HERE
+
+function isPrime(num){
+  if(num % 2 === 0){
+    console.log(true);
+  }else {
+    console.log(false);
+  }
+}
+
+function primes(max){
+ var answer = [];
+ for(var i = 1; i <= max; i++){
+   if(i % 2 !== 0){
+     answer.push(i);
+   }
+ }
+console.log(answer);
+}
+
+primes(10);
