@@ -10,3 +10,36 @@
 */
 
 // YOUR CODE HERE
+// Checks to see if a given number is prime or not.
+var isPrime = function(num){
+  if (num <= 1){
+    return false;
+  } else if (num === 2){
+    return true;
+  } else {
+      for (var i=2; i<num; i++){
+        if((num % i) === 0){
+        return false;
+     }
+   }
+ }
+  return true;
+}
+var output = isPrime(9);
+console.log(output);
+
+// Creates a custom array of prime numbers up to a max value.
+var primeArray = []
+
+var primes = function(max){
+  for (var i=2; i<max; i++){
+    if(isPrime(i)){
+      primeArray.push(i);
+    }
+    continue;
+  }
+  return primeArray;
+}
+
+var output = primes(347);
+console.log(output);
