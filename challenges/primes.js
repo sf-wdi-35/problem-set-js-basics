@@ -10,3 +10,19 @@
 */
 
 // YOUR CODE HERE
+var isPrime = function(num){
+  if (num === 0){
+    return "Not a prime number";
+  } else if (num === 1){
+    return "Not a prime number";
+  } else if (num === 2){
+    return "Prime number";
+  } else {
+    for (var x =2; x < num; x++);
+      if (num % x === 0){
+        return "Not a prime number";
+      } else {
+        return "Prime number";
+      }
+    }
+}
