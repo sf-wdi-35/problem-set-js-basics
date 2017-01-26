@@ -20,9 +20,9 @@
 
 */
 
-function isPalindrom(str){
-  var adjusted= str.toLowerCase().replace(/[\. ,:-]+/g, "");
- if(adjusted== adjusted.split('').reverse('').join('')){
+function isPalindrome(str){
+  var newStr= str.toLowerCase().replace(/[\. ,:-]+/g, "");
+ if(newStr== newStr.split('').reverse('').join('')){
   return true;
 }
 else{
