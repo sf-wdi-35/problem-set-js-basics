@@ -21,3 +21,30 @@
 */
 
 // YOUR CODE HERE
+//
+console.log("palindrome-detector.js loaded");
+
+var isPalindrome = function(string) {
+// Replace all non alphabet elements and spaces with empty strings
+		var str = string.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
+// Print boolean if palindrome
+    return(str === str.split('').reverse().join(''));
+}
+
+function printTests(arr) {
+  for (var string of arr) {
+    console.log(isPalindrome(string));
+  }
+}
+
+printTests([
+  "mom",
+  "racecar",
+  "stack cats",
+  "Pull up if I pull up",
+  "Amore, Roma.",
+  "A man, a plan, a canal: Panama.",
+  "these",
+  "will not",
+  "work!"
+])

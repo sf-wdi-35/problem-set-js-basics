@@ -22,3 +22,24 @@
 */
 
 // YOUR CODE HERE
+//
+console.log("bottles-of-beer-song.js loaded");
+var bottles = "bottles";
+
+while (userChoice > 0) {
+  var userChoice = prompt("how many bottles of beer on the wall?");
+
+  console.log(userChoice + " " + bottles + " of beer on the wall,");
+  console.log(userChoice + " "  + bottles + " of beer");
+  console.log("Take one down and pass it around,");
+  userChoice = userChoice - 1;
+  if (userChoice === 1 ) {
+    bottles = "bottle";
+  }
+
+  if (userChoice === 0) {
+    console.log("No more bottles of beer on the wall");
+  } else {
+    console.log(userChoice + " " + bottles + " of beer on the wall!");
+  }
+}
