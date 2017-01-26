@@ -20,4 +20,12 @@
 
 */
 
-// YOUR CODE HERE
+function isPalindrom(str){
+  var adjusted= str.toLowerCase().replace(/[\. ,:-]+/g, "");
+ if(adjusted== adjusted.split('').reverse('').join('')){
+  return true;
+}
+else{
+  return false;
+}
+}
