@@ -10,3 +10,17 @@
 */
 
 // YOUR CODE HERE
+
+var isPrime = function(num) {
+  for (var i = 2; i < num; i++) {
+//It took a couple tries to figure out why var i = 1 would pop errors
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+var primes = function(max) {
+  if (isPrime() === true)
+}
