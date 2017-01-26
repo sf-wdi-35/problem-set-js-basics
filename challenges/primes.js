@@ -18,7 +18,7 @@ var isPrime = function(num){
     return true;
   } else {
       for (var i=2; i<num; i++){
-        if((num % i) === 0){
+        if ((num % i) === 0){
         return false;
      }
    }
@@ -33,7 +33,7 @@ var primeArray = []
 
 var primes = function(max){
   for (var i=2; i<max; i++){
-    if(isPrime(i)){
+    if (isPrime(i)){
       primeArray.push(i);
     }
     continue;
