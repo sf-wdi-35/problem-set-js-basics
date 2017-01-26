@@ -21,3 +21,17 @@
 */
 
 // YOUR CODE HERE
+
+// To Do: remove punctuation, lowercase, remove spaces, compare forward order with reverse order.
+
+var isPalindrome = function(str) {
+  var string = str.replace(/[,.:]/g, "").toLowerCase();
+  var i = 0;
+  while (i < string.length) {
+    if (string[i] != string[(string.length - 1) - i]) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
