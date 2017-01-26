@@ -21,3 +21,32 @@
 */
 
 // YOUR CODE HERE
+
+var isLetter = function(char) {
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  for(var i = 0; i < alphabet.length; i++) {
+    if(char === alphabet[i]) { //word[i]
+      return true;
+    }
+  }
+
+  return false;
+}
+
+var isPalindrome = function(str) {
+  var lc = str.toLowerCase();
+  var word = lc.split(''); //['r', 'a', 'c', 'e', 'c'. 'a', 'r'];
+  var arr = [];
+  var arr2 = [];
+
+  for(var i = 0; i < word.length; i++) {
+    if(isLetter(word[i]) === true) {
+      arr.push(word[i]);
+      arr2.unshift(word[i]);
+    }
+  }
+  if(arr.join() === arr2.join()) {
+    return true;
+  }
+  return false;
+}
