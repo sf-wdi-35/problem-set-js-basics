@@ -17,15 +17,14 @@
 
 function isPrime(num) {
 	for (var i = 2; i < num; i++) {
-		if(num % i == 0) {
+		if(num % i === 0) {
 			return false;
-		} else {
-			return true;
 		}
 	}
+	return true;
 }
 
-isPrime(5);
+isPrime(27)
 
 function primes(max) {
 	var prime = [];
@@ -37,3 +36,5 @@ function primes(max) {
 	}
 	return prime;
 }
+
+primes(30);
