@@ -39,9 +39,9 @@ function isPalindrome(){
     console.log("result "+res);
 }
 
-if (str[0]===[2]) {
-console.log("This is a Palindrome!")
-}
-
 isPalindrome();
 
+    var paliCheck = isPalindrome.slice(0,2);
+if (paliCheck = true) {
+    console.log("This is a Palindrome!")
+}
