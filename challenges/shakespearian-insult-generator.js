@@ -27,7 +27,7 @@ function generateInsult(){
   var i = Math.floor((Math.random() * 10) + 0);
   var insult = (first_word[i]+" "+second_word[i]+" "+third_word[i]);
   console.log(insult);
-  
+
 }
 
 generateInsult();
