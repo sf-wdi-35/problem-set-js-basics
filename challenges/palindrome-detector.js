@@ -21,3 +21,23 @@
 */
 
 // YOUR CODE HERE
+
+
+function isPalindrome(word) {
+  var arrword = word.split("");
+  // console.log(arrword)
+  var backarr = arrword.reverse();
+  // console.log(backarr)
+  var backword = backarr.join("");
+  // console.log(backword)
+
+  if (backword == word) {
+    console.log("true")
+  }
+  else {
+    console.log("false")
+  }
+}
+
+isPalindrome("racecar");
+isPalindrome("sdfghjk");

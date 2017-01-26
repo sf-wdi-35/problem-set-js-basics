@@ -10,3 +10,16 @@
 */
 
 // YOUR CODE HERE
+
+
+function isPrime(num) {
+  if ((num % 2) > 0) {
+    console.log("true")
+  }
+  else {
+    console.log("false")
+  }
+}
+
+isPrime(3456);
+isPrime(199);
