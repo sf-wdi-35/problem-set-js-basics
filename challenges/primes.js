@@ -10,3 +10,29 @@
 */
 
 // YOUR CODE HERE
+
+
+function isPrime(num) {
+  for(var i = 2; i < num; i++) {
+    if(num % i == 0) {
+      return false;
+    } else {
+      return true
+    }
+  }
+}
+
+
+// if it is a prime number, then iterate through numbers from 2 until value is reached
+// console.log each iteration that retruns true
+
+
+function primes(max){
+  maxPrimesArr = []
+  for(var i = 2; i < max; i++){
+    if (isPrime(max)){
+      maxPrimesArr.push(i);
+    } return maxPrimesArr
+  }
+}
+// ^^ only seems to work for small 2 digit numbers
