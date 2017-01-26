@@ -21,3 +21,15 @@
 */
 
 // YOUR CODE HERE
+
+function isPalindrome(str) {
+  str = str.toLowerCase();
+  var reverseStr = str.split("").reverse().join("");
+  if (str == reverseStr) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isPalindrome('racecar');
