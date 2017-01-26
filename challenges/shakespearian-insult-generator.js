@@ -22,11 +22,15 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 // 	var insultAPerson = 
 // }
 
+var adj = first_word.concat(second_word);
+console.log(adj);
+var noun = third_word;
 
-function setRandomWord(arr) {
+function setRandIndex(arr) {
 	var randIndex = Math.floor(Math.random() * arr.length);
-	console.log(randIndex);
 }
+
+
 
 // function generateInsult() {
 // 	var firstWordIndex = Math.random()
