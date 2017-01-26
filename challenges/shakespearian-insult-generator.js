@@ -17,3 +17,19 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+var generateInsult = function (n, name) {
+  var first_insult = first_word[Math.floor(Math.random() * first_word.length)]
+  var second_insult = second_word[Math.floor(Math.random() * second_word.length)]
+  var third_insult = third_word[Math.floor(Math.random() * third_word.length)]
+
+  if(n === 1){
+    return "Why " + name + ", you " + third_insult + "!";
+  } else if(n === 2) {
+    return "Why " + name + ", you " + second_insult + " " + third_insult + "!"
+  } else if(n === 3){
+    return "Why " + name + ", you " + first_insult + ", " + second_insult + " " + third_insult + "!";
+  }
+}
+
+console.log(generateInsult(2, 'George'));
