@@ -19,9 +19,9 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 // YOUR CODE HERE
 
 var generateInsult = function(num, name) {
-  var insultOne = first_word[Math.round(Math.random() * 50)];
-  var insultTwo = second_word[Math.round(Math.random() * 50)];
-  var insultThree = third_word[Math.round(Math.random() * 50)];
+  var insultOne = first_word[randomNum()];
+  var insultTwo = second_word[randomNum()];
+  var insultThree = third_word[randomNum()];
   if (num == 1) {
     return "Why " + name + ", you, " + insultOne + ", you!";
   } else if (num == 2) {
@@ -31,4 +31,8 @@ var generateInsult = function(num, name) {
   } else {
   	return "Choose a number from 1 to 3.";
   }
+}
+
+var randomNum = function() {
+	return Math.round(Math.random() * 50);
 }
