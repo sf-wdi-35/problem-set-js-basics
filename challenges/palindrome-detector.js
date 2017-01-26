@@ -21,3 +21,27 @@
 */
 
 // YOUR CODE HERE
+var isPalindrome
+
+isPalindrome = function()
+
+
+define mom 
+split array 
+check first and last letter are the same 
+result
+
+
+
+function isPalindrome(){
+    var str = "mom";
+    var res = str.split('');
+    console.log("result "+res);
+}
+
+if (str[0]===[2]) {
+console.log("This is a Palindrome!")
+}
+
+isPalindrome();
+
