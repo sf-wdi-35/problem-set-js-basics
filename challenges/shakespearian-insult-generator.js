@@ -18,16 +18,16 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 
 // YOUR CODE HERE
 
-var generateInsult = function(num) {
+var generateInsult = function(num, name) {
   var insultOne = first_word[Math.round(Math.random() * 50)];
   var insultTwo = second_word[Math.round(Math.random() * 50)];
   var insultThree = third_word[Math.round(Math.random() * 50)];
   if (num == 1) {
-    return "You, " + insultOne + ", you!";
+    return "Why " + name + ", you, " + insultOne + ", you!";
   } else if (num == 2) {
-    return "You, " + insultOne + ", " + insultTwo + ", you!";
+    return "Why " + name + ", you, " + insultOne + ", " + insultTwo + ", you!";
   } else if (num == 3) {
-  	return "You, " + insultOne + ", " + insultTwo + ", " + insultThree + ", you!";
+  	return "Why " + name + ", you, " + insultOne + ", " + insultTwo + ", " + insultThree + ", you!";
   } else {
   	return "Choose a number from 1 to 3.";
   }
