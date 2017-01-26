@@ -17,3 +17,33 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+function generateInsult(arg){
+	var insults = first_word.concat(second_word, third_word);
+	var times = Math.floor(Math.random() * insults.length); 
+
+	if(arg == undefined){
+		var yn = prompt("Do you want to use a name? [Y-N]");
+		if(yn.toLowerCase() == "y"){
+			var enemy = prompt("What name do you want to use?");
+			var xingamento = ["Why", enemy];
+			for(var i = 0; i < times; i++){
+				var randomInsults= insults[Math.floor(Math.random() * insults.length)];
+				xingamento.push(randomInsults + ",");
+			}
+			xingamento.push("you!")
+			return xingamento.join(" ");
+		}
+	}
+
+	if(typeof arg == 'number'){
+		var xingamento = ["You"];
+		for(var i = 0; i < arg; i++){
+			var randomInsults= insults[Math.floor(Math.random() * insults.length)];
+			xingamento.push(randomInsults + ",");
+		}
+		xingamento.push("you!")
+		return xingamento.join(" ");
+	}
+
+	return "nope";
+}
