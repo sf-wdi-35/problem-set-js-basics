@@ -10,3 +10,23 @@
 */
 
 // YOUR CODE HERE
+function isPrime(num){
+for(var i=2; i<num; i++){
+  if(num % i === 0){
+    return false}
+  }
+  if(num<=1){
+    return false;
+  }
+  return true;
+}
+
+function primes(max){
+  var all = [];
+  for(var i=2; i<=max; i++){
+    if(isPrime(i)){
+      all.push(i);
+    }
+  }
+  return all;
+  }
