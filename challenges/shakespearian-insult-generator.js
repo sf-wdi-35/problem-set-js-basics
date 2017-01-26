@@ -17,6 +17,19 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
-function generateInsult(numInsults) {
-	
+// function generateInsult(numInsults) {
+// 	numInsults = Number(prompt("How many ways would you like to be insulted today?"));
+// 	var insultAPerson = 
+// }
+
+
+function setRandomWord(arr) {
+	var randIndex = Math.floor(Math.random() * arr.length);
+	console.log(randIndex);
 }
+
+// function generateInsult() {
+// 	var firstWordIndex = Math.random()
+// }
+
+setRandomWord(first_word);
