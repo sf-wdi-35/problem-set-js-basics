@@ -21,3 +21,33 @@
 */
 
 // YOUR CODE HERE
+
+var testo = prompt("What palindrome are we checking?");
+// query for word or phrase to check
+var isPalindrome = function() {
+  //make string into array
+    var letterCheck = testo.split("");
+// loop array values in reverse, into backward check
+    for (var i = letterCheck.length; i >=0; i -= 1) {
+    var backward[] = letterCheck[i];
+  }
+// check backward vs forward spelling
+    if (letterCheck === backward) {
+      return "true";
+    } else {
+      return "false";
+    };
+};
+
+
+/* playground
+
+var backward = [];
+
+//compare values
+if (letterCheck === backward) {
+  return "true";
+} else {
+  return "false";
+};
+*/
