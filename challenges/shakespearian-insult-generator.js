@@ -25,8 +25,6 @@ function generateInsult(){
    var secondWord = second_word_arr[Math.floor((Math.random() * second_word_arr.length))];
    var thirdWord =  third_word_arr[Math.floor((Math.random() * third_word_arr.length))];
 
-   // console.log("Why " + "Adam" + " you, " + firstWord + ", " + secondWord + ", " + thirdWord + "!");
-
     alert("Why " + userName + " you, " + firstWord + ", " + secondWord + ", " + thirdWord + "!");
 }
 generateInsult();

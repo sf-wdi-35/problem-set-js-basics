@@ -22,7 +22,12 @@
 
 // YOUR CODE HERE
 
+
+
+// other approaches:
+
 // take word and split the number of letters in half, or minus 1 if odd
+// compare i and -i i.e. two arrays that move in opposite directions
 
 // function isItAPalindrome(str){
 //   var srtArr = str.split("").toLowerCase().replace(/[?!-:;,.]+/g,"");
@@ -31,7 +36,7 @@
 // }
 // to be continued...
 
-// compare i and -i i.e. two arrays that move in opposite directions
+
 
 
 function isPalindrome(word){
