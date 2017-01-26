@@ -10,3 +10,24 @@
 */
 
 // YOUR CODE HERE
+function isPrime(num) {
+  if (num < 2) {
+    return false;
+  }
+  for (var i = 2; i <= Math.sqrt(Math.floor(num)); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function primes(max) {
+var primesArr = [];
+  for (var i = 2; i <= max; i++) {
+    if (isPrime(i)) {
+      primesArr.push(i);
+    }
+  }
+  return primesArr;
+}
